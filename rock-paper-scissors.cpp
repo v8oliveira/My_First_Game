@@ -12,7 +12,7 @@ int main(void){
     int player1,player2;
     int victoryp1=0, victoryp2 = 0;
 
-    printf("Welcome to Rock-Paper-Scissors game!\n\nPress 'ENTER' to start the game\n\n");
+    printf("Welcome to Rock-Paper-Scissors game!\n\n");
     printf("Choose one option:\n0 - Rock;\n1 - Paper\n2 - Scissor\n\nPress 'q' to quit\n\n");
     scanf("%d", &player1);
 
@@ -23,7 +23,7 @@ int main(void){
         if(player1 != 0 && player1 != 1 && player1 !=2)
             goto ERROR;
 
-        printf("\n\nPLAYER 1(%d)        PLAYER 2(%d)\n   %s             %s\n        ", victoryp1,victoryp2,options[player1], options[player2]);
+        printf("\n\nPLAYER 1(%d)        PLAYER 2(%d)\n  %s          %s\n        ", victoryp1,victoryp2,options[player1], options[player2]);
 
         switch (player1)
         {
