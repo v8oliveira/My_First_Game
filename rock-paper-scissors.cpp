@@ -8,7 +8,7 @@ using namespace std;
 
 
 int main(void){
-    const char *options[3] = {"Rock", "Paper", "Scissor"};
+    const char *options[3] = {"Rock", "Paper", "Scissor"};   // (vini) as in a list, why do you difine as char?
     int player1,player2;
     int victoryp1=0, victoryp2 = 0;
 
@@ -20,7 +20,7 @@ int main(void){
         srand((unsigned)time(0));   //Reset seed to generate different random numbers;
         player2 = rand()%3;     //Generates random numbers between 0-2
 
-        if(player1 != 0 && player1 != 1 && player1 !=2)
+        if(player1 != 0 && player1 != 1 && player1 !=2)   //(vini) here you can do loop to 1st step, youll not depend error
             goto ERROR;
 
         printf("\n\nPLAYER 1(%d)        PLAYER 2(%d)\n  %s          %s\n        ", victoryp1,victoryp2,options[player1], options[player2]);
